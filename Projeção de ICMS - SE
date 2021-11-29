@@ -1,10 +1,9 @@
-########## Application of the exponential smoothing state space model #########
+**Application of the exponential smoothing state space model**
 
 etsICMS <- ets(Treinoicms) 
 summary(etsICMS)
 
-
-
+-------------------------------------------------------------------------------
 #Residue test
 plot(etsICMS$residuals, xlab=' Periodo') #the parameters will not be changed
 
@@ -26,8 +25,6 @@ legend('topleft',
        col=c('blue', 'red', 4), lty=1:2,
        bty='n')
 grid(col='darkgrey')
-
-
 
 
 '---------------------- forecast -------------------------------'
