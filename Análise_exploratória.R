@@ -31,8 +31,6 @@ ITCD <- ts(Base$ITCD, start = c(2004,1), end = c(2021,10), frequency = 12)
 
 
 ################################################################################
-#exploratory analysis
-
 #ICMS
 plot(ICMS, xlab= 'Periodo', ylab= 'Arrecadacao de ICMS')
 plot(decompose(ICMS, type= "multiplicative"), xlab= "Ano", col="black")
@@ -50,6 +48,10 @@ ggseasonplot(ITCD, main="")
 
 #################################################################################
 
-#################################################################################
-
+#separating ICMS into Training and Testing
+#the test has 10 monthly values to assess whether the modeling can identify the cycle present in the ICMS series
+Treinoicms <- window(ICMS, start= c(2004,1), end= c(2020,12))
+Treinoicms
+Testeicms <- window(ICMS, start= c(2021,1), end= c(2021,10))
+Testeicms
 
