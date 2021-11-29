@@ -9,7 +9,7 @@ summary(etsICMS)
 plot(etsICMS$residuals, xlab=' Periodo') #the parameters will not be changed
 
 
-#Training chart and modeling
+#Chart training and modeling
 plot(etsICMS$x,
      main='',
      xlab='Periodo', ylab='Arrecadacao de ICMS',
