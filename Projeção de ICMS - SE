@@ -1,4 +1,4 @@
-**Application of the exponential smoothing state space model**
+***Application of the exponential smoothing state space model***
 
 etsICMS <- ets(Treinoicms) 
 summary(etsICMS)
