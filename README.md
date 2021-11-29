@@ -11,5 +11,9 @@ Link da Base de dados: http://www.sefa.pa.gov.br/index.php/receitas-despesas
 ### Análise Exploratória
 Na figura abaixo, temos a série temporal de arrecadação de ICMS
 ![Rplot01](https://user-images.githubusercontent.com/54318133/143904378-b49c70ec-2e66-474d-bc33-59718ec9da79.png)
+
 Na figura abaixo, temos a arrecadação de ICMS decomposta em tendência, sazonalidade e resíduo.
 ![DECOMPOSTA](https://user-images.githubusercontent.com/54318133/143904671-8b10fd61-966d-4258-b04d-b9671f6c50dd.png)
+
+Na figura abaixo, temos a série de arrecadação de ICMS anualmente.
+![MENSAL](https://user-images.githubusercontent.com/54318133/143905238-dc66fc4c-c4f7-4b1e-a40c-76d7693480d3.png)
