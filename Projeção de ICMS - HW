@@ -3,34 +3,3 @@
 #------------------ PROJECAO PARA O ICMS --------------------------------------#
 ################################################################################
 ################################################################################
-
-#separating ICMS in training and testing
-#the test has 10 monthly values to evaluate whether the modeling can identify the cycle present in the ICMS series
-Treinoicms <- window(ICMS, start= c(2004,1), end= c(2020,12))
-Treinoicms
-Testeicms <- window(ICMS, start= c(2021,1), end= c(2021,10))
-Testeicms
-
-######## application of exponential smoothing state space model ########
-
-etsICMS <- ets(Treinoicms) 
-summary(etsICMS)
-
-# modeling of ets model
-
-plot(etsICMS$x,
-     main='',
-     xlab='Período', ylab='Arrecadação de ICMS',
-     col='blue',
-     bty='l')
-par(new=TRUE)
-plot(etsICMS$fitted,
-     axes=F, ann=F,
-     col='red',
-     type = "l")
-
-legend('topleft',
-       c('Valor real', 'Modelagem Suavização Exponêncial'),
-       col=c('blue', 'red', 4), lty=1:2,
-       bty='n')
-grid(col='darkgrey')
