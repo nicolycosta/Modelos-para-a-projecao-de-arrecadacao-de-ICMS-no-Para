@@ -25,7 +25,7 @@ Link da Base de dados: http://www.sefa.pa.gov.br/index.php/receitas-despesas
  _&nbsp;_ _&nbsp;_  O primeiro passo para a projeção com modelo HW é a escolha entre o uso do modelo de HW aditivo ou multiplicativo.
 Essa escolha é feita através do critério de informação do Erro Absoluto Médio Percentual (MAPE). \
  _&nbsp;_ _&nbsp;_ O valor do MAPE para o valor real da série de treino e a modelagem para o HW multiplicativo foi de 5.05, para o valor real da série de treino e a modelagem para o HW aditivo foi de 5.4,logo, será usado o HW multiplicativo para a modelagem de ICMS. \
- _&nbsp;_ _&nbsp;_ Com a modelagem de HW multiplicativo, obtivemos os parâmetros alfa= 0.35, beta= 0.009 e gama= 12, porém, para uma melhor predição, foi feito a troca de parâmetros através do critério de informação MAPE, e obtivemos um alfa= 0.3, beta= 0.0009 e gama= 0.09 com um menor valor de MAPE.
+_&nbsp;_ _&nbsp;_ Com a modelagem de HW multiplicativo, obtivemos os parâmetros alfa= 0.35, beta= 0.009 e gama= 12, porém, para uma melhor predição, foi feito a troca de parâmetros através do critério de informação MAPE, e obtivemos um alfa= 0.3, beta= 0.0009 e gama= 0.09 com um menor valor de MAPE.
  
   _&nbsp;_ _&nbsp;_ Na figura abaixo, temos o resíduo da modelagem de HW multiplicativo.
 ![residuoMMM](https://user-images.githubusercontent.com/54318133/144073449-2d6c64ce-fe53-40e4-8a89-bb65a94a4b81.png)
@@ -54,6 +54,13 @@ Essa escolha é feita através do critério de informação do Erro Absoluto Mé
 
 
 ## Escolha do melhor modelo
+
+ _&nbsp;_ _&nbsp;_ Para a escolha do melhor modelo, foi feito o calculo do MAPE com os dados de teste e com a projeção de 10 valores a frente da modelagem, o valor do MAPE para a suavização exponencial de Holt-Winters multiplicativo foi de 7.5, para o valor do MAPE para a modelagem de espaço de estado de suavização exponencial foi de 5.9, logo, o melhor modelo para a projeção de arrecadação de ICMS no Pará é a modelagem de espaço de estado de suavização exponencial. \ 
+
+_&nbsp;_ _&nbsp;_ Na figura abaixo, temos o valor da arrecadação de ICMS de jan/2004 a out/2021 e o valor previsto com a modelagem de espaço de estado de suavização exponencial no período de nov/2021 a dez/2022.
+ 
+![AGORA FIM MMM](https://user-images.githubusercontent.com/54318133/144090037-9236d92f-2418-4506-bf69-83cdd81bd286.png)
+
 
 
 
