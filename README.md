@@ -61,6 +61,9 @@ _&nbsp;_ _&nbsp;_ Na figura abaixo, temos o valor da arrecadação de ICMS de ja
  
 ![aaaaaaaaaaaaaaaaaaaaaaaaa](https://user-images.githubusercontent.com/54318133/144090243-6200da72-1870-486a-9296-e4da3cf555e1.png)
 
+_&nbsp;_ _&nbsp;_ Na tabela abaixo, temos a previsão de arrecadação de ICMS para o período de nov/2021 a dez/2022.
+
+![image](https://user-images.githubusercontent.com/54318133/144092054-8f3d748c-ed4e-4281-8496-61d75c6cbc39.png)
 
 
 
