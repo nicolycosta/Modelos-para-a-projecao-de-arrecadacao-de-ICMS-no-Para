@@ -17,14 +17,24 @@ Link da Base de dados: http://www.sefa.pa.gov.br/index.php/receitas-despesas
 ![DECOMPOSTA](https://user-images.githubusercontent.com/54318133/143904671-8b10fd61-966d-4258-b04d-b9671f6c50dd.png)
 
  _&nbsp;_ _&nbsp;_  Na figura abaixo, temos a série de arrecadação de ICMS anualmente.
-![MENSAL](https://user-images.githubusercontent.com/54318133/143905238-dc66fc4c-c4f7-4b1e-a40c-76d7693480d3.png)
+![ATual](https://user-images.githubusercontent.com/54318133/144069542-92b7e670-1940-439c-aa11-1818e0d8d23c.png)
 
  _&nbsp;_ _&nbsp;_  A série de ICMS apresenta uma tendência crescente e uma aparente sazonalidade de 12 meses. Será feito a separação da base de dados em TREINO e TESTE, sendo a de treino de jan/2004 a dez/2020, e o de teste de jan/2021 a out/2021.
 
 #### Projeção para o ICMS com o modelo de  suavização exponencial de Holt-Winters (HW)
  _&nbsp;_ _&nbsp;_  O primeiro passo para a projeção com modelo HW é a escolha entre o uso do modelo de HW aditivo ou multiplicativo.
-Essa escolha é feita através do critério de informação do Erro Absoluto Médio Percentual (MAPE).
+Essa escolha é feita através do critério de informação do Erro Absoluto Médio Percentual (MAPE). \
+ _&nbsp;_ _&nbsp;_ O valor do MAPE para o valor real da série de treino e a modelagem para o HW multiplicativo foi de 5.05, para o valor real da série de treino e a modelagem para o HW aditivo foi de 5.4,logo, será usado o HW multiplicativo para a modelagem de ICMS. \
+ _&nbsp;_ _&nbsp;_ Com a modelagem de HW multiplicativo, obtivemos os parâmetros alfa= 0.35, beta= 0.009 e gama= 12, porém, para uma melhor predição, foi feito a troca de parâmetros através do critério de informação MAPE, e obtivemos um alfa= 0.3, beta= 0.0009 e gama= 0.09 com um menor valor de MAPE.
+ 
+  _&nbsp;_ _&nbsp;_ Na figura abaixo, temos o resíduo da modelagem de HW multiplicativo.
+  ![residuoMMM](https://user-images.githubusercontent.com/54318133/144073449-2d6c64ce-fe53-40e4-8a89-bb65a94a4b81.png)
+  _&nbsp;_ _&nbsp;_ Na figura abaixo, temos a série de treino do ICMS e a modelagem de HW multiplicativo.
+![Model MMM](https://user-images.githubusercontent.com/54318133/144073642-d6f80314-0852-4c2f-b66c-cb7f7545c258.png)
 
+ _&nbsp;_ _&nbsp;_ Com a escolha dos parâmetros, o próximo passo é fazer a projeção de arrecadação de ICMS para 10 meses a frente para fazer a comparação de melhor modelo( SE ou HW) através do MAPE. Essa comparação será feita na conclusão. \
+ _&nbsp;_ _&nbsp;_ Na figura abaixo, temos o valor de teste e o valor previsto pela modelagem de HW multiplicativo. 
+ ![projeçãoHW MMM](https://user-images.githubusercontent.com/54318133/144074880-b7498d0c-dd68-4db7-8236-c8b013b509d6.png)
 
 
 
