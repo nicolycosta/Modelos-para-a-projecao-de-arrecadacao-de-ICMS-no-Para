@@ -7,12 +7,15 @@
 etsICMS <- ets(Treinoicms) 
 summary(etsICMS)
 
-----------------------------------------------------------------------------------------------
-#Residue test
+
+
+'-------------------------Residue test---------------------------------'
 plot(etsICMS$residuals, xlab=' Periodo') #the parameters will not be changed
 
 
-#Chart training and modeling
+
+
+'---------------Training chart and modeling----------------------------'
 plot(etsICMS$x,
      main='',
      xlab='Periodo', ylab='Arrecadacao de ICMS',
@@ -31,11 +34,13 @@ legend('topleft',
 grid(col='darkgrey')
 
 
-'-------------------------------- forecast -------------------------------------------------'
+
+
+'------------------------- forecast ----------------------------------'
 
 etsICMS <- ets(Treinoicms) 
 etsICMS
-previsaoets <- forecast.ets(etsICMS,h=10, level= 95)
+previsaoets <- forecast.ets(etsICMS, h=10, level= 95)
 previsaoets <- data.frame(previsaoets)
 previsaoets
 summary(etsICMS)
