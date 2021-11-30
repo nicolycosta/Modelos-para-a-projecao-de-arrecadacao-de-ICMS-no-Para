@@ -49,6 +49,7 @@ Essa escolha é feita através do critério de informação do Erro Absoluto Mé
 ![modelagem](https://user-images.githubusercontent.com/54318133/143907803-9ebcb223-9856-4d1e-ad87-9a7738c54146.png)
 
  _&nbsp;_ _&nbsp;_  Na figura abaixo, temos o valor de teste e o valor previsto pela modelagem de espaço de estado de suavização exponencial.
+ 
  ![projeçãoHW MMM](https://user-images.githubusercontent.com/54318133/144077442-7908ed05-bb48-43d2-a302-1259ce9570ab.png)
 
 
