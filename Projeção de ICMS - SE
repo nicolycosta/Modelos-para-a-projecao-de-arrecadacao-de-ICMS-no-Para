@@ -61,4 +61,3 @@ legend('topleft',
        col=c('blue', 'red', 4), lty=1:2,
        bty='n')
 grid(col='darkgrey')
-
