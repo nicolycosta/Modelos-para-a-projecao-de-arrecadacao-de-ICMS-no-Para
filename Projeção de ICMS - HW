@@ -5,7 +5,7 @@
 #################################################################################################
 
 
-'------ choice of additive model and multiplicative model by the MAPE decision criterion --------'
+'------ choice of additive model and multiplicative model  by the MAPE decision criterion --------'
 
 
 modelo_holtwintersMult <- HoltWinters(x = Treinoicms, 
@@ -15,33 +15,35 @@ modelo_holtwintersAdit <- HoltWinters(x = Treinoicms,
 
 MapeMul <- mean(abs(((Treinoicms - modelo_holtwintersMult$fitted[,1])/Treinoicms)*100))
 MapeAdit <-mean(abs(((Treinoicms - modelo_holtwintersAdit$fitted[,1])/Treinoicms)*100))
-MapeMul #5.05
-MapeAdit #5.4
+MapeMul
+MapeAdit 
+
 
 
 '----------------------------------- Parameters and residual test --------------------------------'
 
 
-modelo_holtwinters <- HoltWinters(x = Treinoicms, 
+modelo_holtwinters0 <- HoltWinters(x = Treinoicms, 
                                   seasonal = "multiplicative") # as the mape = 0.05, the model will be multiplicative
 
 
-'residual'
+'---change of parameters---'
+modelo_holtwinters <- HoltWinters(x = Treinoicms , alpha = 0.3,
+                                  beta = 0.0009, 
+                                  gamma = 0.09,
+                                  seasonal = "multiplicative") 
+
+mean(abs(((Treinoicms - modelo_holtwinters$fitted[,1])/Treinoicms)*100)) # MAPE = 5.006
+mean(abs(((Treinoicms - modelo_holtwinters0$fitted[,1])/Treinoicms)*100))
+
+
+
+'---residual---'
 residual <- modelo_holtwinters$fitted[,1] - window(Treinoicms, start= c(2005,1), end= c(2020,12))
 plot(residual, xlab=' Periodo')
 
 
-
-
-'change of parameters'
-modelo_holtwinters <- HoltWinters(x = Treinoicms , alpha = 0.28,
-                                  beta = 0.0009, 
-                                  gamma = 0.09,
-                                  seasonal = "multiplicative") 
-mean(abs(((Treinoicms - modelo_holtwinters$fitted[,1])/Treinoicms)*100)) # MAPE = 5.006
-
-
-
+'---Model---'
 plot(window(Treinoicms, start= c(2005,1), end= c(2020,12)),
      main='',
      xlab='Periodo', ylab='Arrecadacao de ICMS',
@@ -54,14 +56,16 @@ plot( modelo_holtwinters$fitted[,1],
       type = "l")
 
 legend('topleft',
-       c('Valor real', 'Modelagem Suavizacao Exponencial'),
+       c('Valor real', 'Holt-Winters Multiplicativo'),
        col=c('blue', 'red', 4), lty=1:2,
        bty='n')
 grid(col='darkgrey')
 
 
-'---------------------------------- forecast ---------------------------------------------------'
-modelo_holtwinters <- HoltWinters(x = Treinoicms , alpha = 0.28,
+
+
+'------------------------------- forecast -------------------------------------'
+modelo_holtwinters <- HoltWinters(x = Treinoicms , alpha = 0.3,
                                   beta = 0.0009, 
                                   gamma = 0.09,
                                   seasonal = "multiplicative")
@@ -86,3 +90,13 @@ legend('topleft',
        col=c('blue', 'red', 4), lty=1:2,
        bty='n')
 grid(col='darkgrey')
+
+
+
+
+
+
+
+
+
+
