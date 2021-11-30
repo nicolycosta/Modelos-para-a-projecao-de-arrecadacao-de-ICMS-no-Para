@@ -55,11 +55,11 @@ _&nbsp;_ _&nbsp;_ Com a modelagem de HW multiplicativo, obtivemos os parâmetros
 
 ## Escolha do melhor modelo
 
- _&nbsp;_ _&nbsp;_ Para a escolha do melhor modelo, foi feito o calculo do MAPE com os dados de teste e com a projeção de 10 valores a frente da modelagem, o valor do MAPE para a suavização exponencial de Holt-Winters multiplicativo foi de 7.5, para o valor do MAPE para a modelagem de espaço de estado de suavização exponencial foi de 5.9, logo, o melhor modelo para a projeção de arrecadação de ICMS no Pará é a modelagem de espaço de estado de suavização exponencial. \ 
+ _&nbsp;_ _&nbsp;_ Para a escolha do melhor modelo, foi feito o calculo do MAPE com os dados de teste e com a projeção de 10 valores a frente da modelagem, o valor do MAPE para a suavização exponencial de Holt-Winters multiplicativo foi de 7.5, para o valor do MAPE para a modelagem de espaço de estado de suavização exponencial foi de 5.9, logo, o melhor modelo para a projeção de arrecadação de ICMS no Pará é a modelagem de espaço de estado de suavização exponencial.  
 
 _&nbsp;_ _&nbsp;_ Na figura abaixo, temos o valor da arrecadação de ICMS de jan/2004 a out/2021 e o valor previsto com a modelagem de espaço de estado de suavização exponencial no período de nov/2021 a dez/2022.
  
-![AGORA FIM MMM](https://user-images.githubusercontent.com/54318133/144090037-9236d92f-2418-4506-bf69-83cdd81bd286.png)
+![aaaaaaaaaaaaaaaaaaaaaaaaa](https://user-images.githubusercontent.com/54318133/144090243-6200da72-1870-486a-9296-e4da3cf555e1.png)
 
 
 
