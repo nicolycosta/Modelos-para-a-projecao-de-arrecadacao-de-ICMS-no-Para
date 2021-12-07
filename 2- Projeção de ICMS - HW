@@ -13,10 +13,13 @@ modelo_holtwintersMult <- HoltWinters(x = Treinoicms,
 modelo_holtwintersAdit <- HoltWinters(x = Treinoicms, 
                                       seasonal = "additive") 
 
-MapeMul <- mean(abs(((Treinoicms - modelo_holtwintersMult$fitted[,1])/Treinoicms)*100))
-MapeAdit <-mean(abs(((Treinoicms - modelo_holtwintersAdit$fitted[,1])/Treinoicms)*100))
-MapeMul
-MapeAdit 
+Resid1 <- modelo_holtwintersMult$fitted[,1] - Treinoicms
+acf1 <- acf(Resid1)
+
+Resid2 <- modelo_holtwintersAdit$fitted[,1] - Treinoicms
+acf2 <- acf(Resid2)
+
+
 
 
 
