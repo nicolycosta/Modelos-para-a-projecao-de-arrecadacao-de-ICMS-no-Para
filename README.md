@@ -25,8 +25,8 @@ Para a análise dos dados e realização de estimativas deste estudo, utilizou-s
 
 # PROJEÇÃO PARA O ICMS COM O MODELO DE  SUAVIZAÇÃO EXPONENCIAL DE HOLT-WINTERS (HW)
  _&nbsp;_ _&nbsp;_  O primeiro passo para a projeção com modelo HW é a escolha entre o uso do modelo de HW aditivo ou multiplicativo.
-Essa escolha é feito através da anális dos resíduos e da função de autocorrelação de ambos modelos.
- _&nbsp;_ _&nbsp;_ O valor do MAPE para o valor real da série de treino e a modelagem para o HW multiplicativo foi de 5.05, para o valor real da série de treino e a modelagem para o HW aditivo foi de 5.4,logo, será usado o HW multiplicativo para a modelagem de ICMS. \
+Essa escolha é feito através da anális dos resíduos com a função de autocorrelação amostral de ambos modelos.
+ _&nbsp;_ _&nbsp;_  Através da análise dos resíduos com a função de autocorrelação amostral, o modelo usado será a do HW multiplicativo.
 _&nbsp;_ _&nbsp;_ Com a modelagem de HW multiplicativo, obtivemos os parâmetros alfa= 0.35, beta= 0.009 e gama= 12, porém, para uma melhor predição, foi feito a troca de parâmetros através do critério de informação MAPE, e obtivemos um alfa= 0.3, beta= 0.0009 e gama= 0.09 com um menor valor de MAPE.
  
   _&nbsp;_ _&nbsp;_ Na figura abaixo, temos o resíduo da modelagem de HW multiplicativo.
