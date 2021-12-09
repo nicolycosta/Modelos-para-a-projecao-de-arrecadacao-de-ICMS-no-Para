@@ -41,8 +41,8 @@ _&nbsp;_ _&nbsp;_ Com a modelagem de HW multiplicativo, obtivemos os parâmetros
   _&nbsp;_ _&nbsp;_ Na figura abaixo, temos a série de treino do ICMS e a modelagem ajustada de HW multiplicativo.
 ![Model MMM](https://user-images.githubusercontent.com/54318133/144073642-d6f80314-0852-4c2f-b66c-cb7f7545c258.png)
 
- _&nbsp;_ _&nbsp;_ Com a escolha dos parâmetros, o próximo passo é fazer a projeção de arrecadação de ICMS para 10 meses a frente para fazer a comparação de melhor modelo( SE ou HW) através do MAPE. Essa comparação será feita na conclusão. \
- _&nbsp;_ _&nbsp;_ Na figura abaixo, temos o valor de teste e o valor previsto pela modelagem de HW multiplicativo. 
+ _&nbsp;_ _&nbsp;_ Com a escolha dos parâmetros, o próximo passo é fazer a projeção de arrecadação de ICMS para 10 meses a frente para fazer a comparação de melhor modelo (SE ou HW) através do MAPE. Essa comparação será feita na conclusão. \
+ _&nbsp;_ _&nbsp;_ Na figura abaixo, temos o valor de teste e o valor previsto pela modelagem ajustada de HW multiplicativo. 
  ![projeçãoHW MMM](https://user-images.githubusercontent.com/54318133/144074880-b7498d0c-dd68-4db7-8236-c8b013b509d6.png)
 
 
