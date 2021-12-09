@@ -37,8 +37,6 @@ Essa escolha é feita através da análise dos resíduos com a função de autoc
 
 _&nbsp;_ _&nbsp;_ Com a modelagem de HW multiplicativo, obtivemos os parâmetros alfa= 0.35, beta= 0.009 e gama= 12, porém, para uma melhor predição, foi feito a troca de parâmetros através do critério de informação MAPE, e obtivemos um alfa= 0.3, beta= 0.0009 e gama= 0.09 com um menor valor de MAPE.
  
-  _&nbsp;_ _&nbsp;_ Na figura abaixo, temos o resíduo da modelagem de HW multiplicativo.
-![residuoMMM](https://user-images.githubusercontent.com/54318133/144073449-2d6c64ce-fe53-40e4-8a89-bb65a94a4b81.png)
 
   _&nbsp;_ _&nbsp;_ Na figura abaixo, temos a série de treino do ICMS e a modelagem de HW multiplicativo.
 ![Model MMM](https://user-images.githubusercontent.com/54318133/144073642-d6f80314-0852-4c2f-b66c-cb7f7545c258.png)
