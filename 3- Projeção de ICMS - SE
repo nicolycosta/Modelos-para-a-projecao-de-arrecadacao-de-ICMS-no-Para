@@ -10,10 +10,9 @@ summary(etsICMS)
 
 
 '-------------------------Residue test---------------------------------'
-plot(etsICMS$residuals, xlab=' Periodo') #the parameters will not be changed
-
-
-
+par(mfrow = c(1, 2), las = 1)
+plot(etsICMS$residuals, xlab=' Period', main="Resid") #the parameters will not be changed
+acf(etsICMS$residuals, main="Correlation Function Estimation")
 
 '---------------Training chart and modeling----------------------------'
 plot(etsICMS$x,
