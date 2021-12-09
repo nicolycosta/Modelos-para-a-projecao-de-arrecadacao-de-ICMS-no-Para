@@ -33,7 +33,7 @@ Essa escolha é feita através da análise dos resíduos com a função de autoc
   _&nbsp;_ _&nbsp;_ Na figura abaixo, temos o resíduo da modelagem de HW aditivo e a função de autocorrelação do mesmo.
   ![HW aditivo](https://user-images.githubusercontent.com/54318133/145465372-9f104b87-5273-4c8c-a381-7d392fd59aa2.png)
 
-  _&nbsp;_ _&nbsp;_ De acordo com as figuras acima, podemos notar que tanto o modelo HW multiplicativo quanto o aditivo estão modelo bem a série de ICMS. Porém, o modelo usado será o HW multiplicativo por aparentar ter explicados mais os dados.
+  _&nbsp;_ _&nbsp;_ De acordo com as figuras acima, podemos notar que tanto o modelo HW multiplicativo quanto o aditivo estão modelando bem a série de ICMS. Porém, o modelo usado será o HW multiplicativo por aparentar ter explicado mais os dados.
 
 _&nbsp;_ _&nbsp;_ Com a modelagem de HW multiplicativo, obtivemos os parâmetros alfa= 0.35, beta= 0.009 e gama= 12, porém, para uma melhor predição, foi feito a troca de parâmetros através do critério de informação MAPE, e obtivemos um alfa= 0.3, beta= 0.0009 e gama= 0.09 com um menor valor de MAPE.
  
