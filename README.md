@@ -53,11 +53,10 @@ _&nbsp;_ _&nbsp;_ Com a modelagem de HW multiplicativo, obtivemos os parâmetros
  _&nbsp;_ _&nbsp;_  Na figura abaixo, temos o gráfico de resíduo da modelagem de SE e a função de autocorrelação da mesma..
 ![ETS](https://user-images.githubusercontent.com/54318133/145466883-ed56cb89-b039-4ac0-b03a-d878af13d2b7.png)
 
- _&nbsp;_ _&nbsp;_  Na figura abaixo, temos a modelagem de SE e a base de treino.
+ _&nbsp;_ _&nbsp;_  Na figura abaixo, temos a modelagem otimizada de SE e a base de treino.
 ![modelagem](https://user-images.githubusercontent.com/54318133/143907803-9ebcb223-9856-4d1e-ad87-9a7738c54146.png)
 
- _&nbsp;_ _&nbsp;_  Na figura abaixo, temos o valor de teste e o valor previsto pela modelagem de espaço de estado de suavização exponencial.
- 
+ _&nbsp;_ _&nbsp;_  Na figura abaixo, temos o valor de teste e o valor previsto pela modelagem otimizada de espaço de estado de suavização exponencial.
  ![projeçãoHW MMM](https://user-images.githubusercontent.com/54318133/144077442-7908ed05-bb48-43d2-a302-1259ce9570ab.png)
 
 
