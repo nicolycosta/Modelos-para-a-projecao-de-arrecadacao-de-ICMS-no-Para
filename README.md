@@ -50,8 +50,8 @@ _&nbsp;_ _&nbsp;_ Com a modelagem de HW multiplicativo, obtivemos os parâmetros
 
 # PROJEÇÃO PARA O ICMS COM O MODELO DE ESPAÇO DE ESTADO DE SUAVIZAÇÃO EXPONENCIAL (SE)
  _&nbsp;_ _&nbsp;_  Após a aplicação da função da modelagem SE, foi obtido os parâmetros alfa= 0.36, beta= 0.017, gama= 1e-04 e phi= 0.98. Não foi feito a troca de parâmetros . \
- _&nbsp;_ _&nbsp;_  Na figura abaixo, temos o gráfico de resíduo da modelagem de SE.
-![residuo](https://user-images.githubusercontent.com/54318133/143907539-48d797c5-2389-4eb7-a72d-9f97e88b5412.png)
+ _&nbsp;_ _&nbsp;_  Na figura abaixo, temos o gráfico de resíduo da modelagem de SE e a função de autocorrelação da mesma..
+![ETS](https://user-images.githubusercontent.com/54318133/145466883-ed56cb89-b039-4ac0-b03a-d878af13d2b7.png)
 
  _&nbsp;_ _&nbsp;_  Na figura abaixo, temos a modelagem de SE e a base de treino.
 ![modelagem](https://user-images.githubusercontent.com/54318133/143907803-9ebcb223-9856-4d1e-ad87-9a7738c54146.png)
